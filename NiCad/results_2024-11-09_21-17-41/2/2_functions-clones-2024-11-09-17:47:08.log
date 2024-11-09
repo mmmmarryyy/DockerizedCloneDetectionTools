@@ -1,0 +1,62 @@
+Sat Nov  9 17:47:08 UTC 2024
+./lib/nicad/txl/java-extract-functions.x ALL.java >> nicadclones/2/2_functions.xml
+[nicadclones/2/2/selected/1812718.java, java-extract-functions.txl] : TXL0192E line 1 of nicadclones/2/2/selected/1812718.java - Syntax error at or near:
+	﻿package cn >>> . <<< poco . util ; import 
+[nicadclones/2/2/selected/279650.java, java-extract-functions.txl] : TXL0192E line 1 of nicadclones/2/2/selected/279650.java - Syntax error at or near:
+	﻿package cn >>> . <<< poco . util ; import 
+[nicadclones/2/2/selected/170357.java, java-extract-functions.txl] : TXL0192E line 8 of nicadclones/2/2/selected/170357.java - Syntax error at or near:
+	﻿ >>> package <<< com . javaxyq . common 
+[nicadclones/2/2/selected/422434.java, java-extract-functions.txl] : TXL0192E line 1 of nicadclones/2/2/selected/422434.java - Syntax error at or near:
+	﻿package cn >>> . <<< poco . food . published 
+[nicadclones/2/2/selected/1289158.java, java-extract-functions.txl] : TXL0192E line 20 of nicadclones/2/2/selected/1289158.java - Syntax error at or near:
+	﻿ >>> package <<< twitterSina . common ; import 
+[nicadclones/2/2/selected/2581080.java, java-extract-functions.txl] : TXL0192E line 1 of nicadclones/2/2/selected/2581080.java - Syntax error at or near:
+	﻿package cn >>> . <<< edu . pku . dr 
+[nicadclones/2/2/selected/943581.java, java-extract-functions.txl] : TXL0192E line 1 of nicadclones/2/2/selected/943581.java - Syntax error at or near:
+	﻿package quotegetter >>> ; <<< import java . io . 
+[nicadclones/2/2/selected/1637856.java, java-extract-functions.txl] : TXL0192E line 1 of nicadclones/2/2/selected/1637856.java - Syntax error at or near:
+	﻿package cn >>> . <<< edu . pku . dr 
+
+Sat Nov  9 17:57:46 UTC 2024
+
+Sat Nov  9 17:57:46 UTC 2024
+./lib/nicad/tools/streamprocess.x './lib/nicad/txl/java-rename-blind-functions.x stdin' < nicadclones/2/2_functions.xml > nicadclones/2/2_functions-blind.xml
+
+real	1m15.585s
+user	1m5.650s
+sys	0m9.872s
+
+Sat Nov  9 17:59:02 UTC 2024
+
+Sat Nov  9 17:59:02 UTC 2024
+./lib/nicad/tools/streamprocess.x './lib/nicad/txl/java-abstract-functions.x stdin - literal' < nicadclones/2/2_functions-blind.xml > nicadclones/2/2_functions-blind-abstract.xml
+
+real	1m27.620s
+user	1m15.832s
+sys	0m11.728s
+
+Sat Nov  9 18:00:30 UTC 2024
+
+Sat Nov  9 18:00:30 UTC 2024
+./lib/nicad/tools/clonepairs.x nicadclones/2/2_functions-blind-abstract.xml 0.30 10 10000 > nicadclones/2/2_functions-blind-abstract-clones/2_functions-blind-abstract-clones-0.30.xml
+Processing nicadclones/2/2_functions-blind-abstract.xml with difference threshold 30%, clone size 10 .. 10000 lines
+Reading pcs ............................................................................................................................................... done.
+Total 142787/6000000 potential clones of 10 lines or more
+Used 1151517/100000000 total pc lines
+Used 15934444/600000000 unique line text chars
+ and 235887/12000000 unique lines
+Sorting pcs ............................................................................................................................................................................... done.
+Finding clones .............................................................................................................................................. done.
+Total 478856655 pc comparisons
+Pruning embedded clone pairs ............................................................................................................. done.
+Pruned 601 embedded clone pairs
+Found 100562 clone pairs
+Generating XML output ..................................................................................................... done.
+
+
+real	1m49.774s
+user	1m35.788s
+sys	0m13.985s
+
+Sat Nov  9 18:02:19 UTC 2024
+

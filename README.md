@@ -54,7 +54,7 @@ bash ./run_CCStokener_runner.sh [options]
    * Запуск с использованием подпути (например, bcb_reduced/2): `bash ./run_CCStokener_runner.sh -d ./bcb_reduced/2`
    * Запуск с указанием языка: `bash ./run_CCStokener_runner.sh -l java`
 
-### Результат исполнения
+#### Результат исполнения
 
 Результат исполнения появится в директории `CCStokener/runner/results_<timestamp>/`
 
@@ -81,6 +81,26 @@ bash ./run_CCStokener_verify.sh [options]
    * Запуск с использованием подпути (например, bcb_reduced/2): `bash ./run_CCStokener_verify.sh -d ./bcb_reduced/2`
    * Запуск с указанием языка: `bash ./run_CCStokener_verify.sh -l java`
 
-### Результат исполнения
+#### Результат исполнения
 
 Результат исполнения появится в директории `CCStokener/verify/results_<timestamp>/`
+
+## NiCad
+
+### Использование
+
+1. **Сборка контейнера:**
+
+```
+bash ./build_NiCad.sh
+```
+
+2. **Запуск контейнера:**
+
+```
+bash ./run_NiCad.sh
+```
+
+### Результат исполнения
+
+Результат исполнения появится в директории `NiCad/results/`
