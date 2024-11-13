@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y flex
 RUN apt-get install -y git python3-pip
 RUN apt-get install -y libboost-all-dev
-RUN python3 -m pip install gdown
+RUN python3 -m pip install gdown==5.2.0
 
 RUN git clone https://github.com/PCWcn/CCAligner.git
 
@@ -22,12 +22,8 @@ RUN chmod +x ./co1
 
 COPY my_runner .
 
-RUN find .
-
 # Download and unpack IJaDataset
 RUN gdown 1upcQ8Jqk8Mz_OdC47dI2WEng5CR8m6RM && \
     tar -xvf IJaDataset_BCEvalVersion.tar.gz
-
-RUN find . -type d
 
 CMD bash ./my_runner

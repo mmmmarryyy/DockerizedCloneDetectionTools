@@ -2,8 +2,7 @@ FROM openjdk:21-jdk-slim
 
 RUN apt-get update && apt-get install -y git python3-pip
 
-# Install gdown
-RUN python3 -m pip install gdown --break-system-packages
+RUN python3 -m pip install gdown==5.2.0 --break-system-packages
 
 WORKDIR /app
 
